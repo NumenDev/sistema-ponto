@@ -30,16 +30,6 @@ Para o colaborador CLT, o fechamento semanal funciona apenas como uma **provisã
 
 Os cálculos utilizam o divisor mensal de 220 horas para a jornada padrão de 44 horas semanais, com as horas extras de João calculadas com adicional de 50%. O fechamento semanal CLT é gerado apenas como provisão, deixando o pagamento efetivo para a folha mensal. Por fim, o pagamento PJ fica estritamente condicionado à emissão da nota fiscal.
 
-### 2. Convivência entre fechamento semanal e folha mensal CLT
-
-Essa é a tensão mais delicada do sistema porque envolve dois ritmos diferentes com finalidades distintas: o financeiro precisa de visibilidade semanal para planejar o caixa, enquanto a legislação trabalhista exige que o pagamento CLT seja consolidado mensalmente, com os descontos legais e valor de FGTS.
-
-A solução é tratar esses dois fluxos como paralelos e independentes, sem tentar unificá-los numa única operação. A cada semana, o sistema gera um fechamento para todos os colaboradores, independente do tipo de contrato. Para PJ e diaristas, esse fechamento é o gatilho direto do pagamento, desde que as condições estejam satisfeitas — nota fiscal emitida no caso do PJ. Para o colaborador CLT, o fechamento semanal cumpre um papel diferente: ele não gera pagamento, mas sim uma **provisão contábil** que alimenta o fluxo de caixa projetado do financeiro. O sistema acumula, semana a semana, as horas trabalhadas, as horas extras e os adicionais devidos em um registro mensal de acumulação vinculado àquele colaborador e àquele mês de referência.
-
-No fechamento mensal — tipicamente no último dia útil do mês — o sistema consolida os quatro ou cinco acumulados semanais, calcula os descontos legais sobre o total bruto e gera o holerite definitivo. Apenas nesse momento o pagamento CLT é efetivado.
-
-Essa separação resolve o problema sem violar nenhuma das duas exigências: o financeiro enxerga semana a semana o quanto está comprometido com a folha CLT por meio das provisões, e o RH processa a folha mensalmente dentro das obrigações legais. O colaborador CLT recebe corretamente no fechamento do mês, e o sistema mantém rastreabilidade completa de como aquele valor foi composto ao longo das semanas.
-
 ---
 
 ## Parte 2: Desafio de Lógica
@@ -208,5 +198,4 @@ console.table(resultados.map((r) => ({
 | Maria | PJ       | R$ 2.000,00   | A_PAGAR  | 40h × R$50,00/h                                   |
 | José  | Diarista | R$ 450,00     | A_PAGAR  | 3 dias × R$150,00/dia                             |
 
-> **Nota — João (CLT):** o valor de R$ 515,00 é uma provisão semanal para o fluxo de caixa do financeiro. O pagamento real ocorre no fechamento mensal da folha apos aplicação dos descontos legais obrigatórios sobre o total bruto acumulado no mês.#   s i s t e m a - p o n t o  
- 
+> **Nota — João (CLT):** o valor de R$ 515,00 é uma provisão semanal para o fluxo de caixa do financeiro. O pagamento real ocorre no fechamento mensal da folha apos aplicação dos descontos legais obrigatórios sobre o total bruto acumulado no mês.
